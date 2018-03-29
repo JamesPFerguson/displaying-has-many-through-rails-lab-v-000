@@ -1,6 +1,7 @@
 class PatientsController < ApplicationController
 
   def show
+    abstract_set
     @patient = Patient.find(params[:id])
     binding.pry
   end
