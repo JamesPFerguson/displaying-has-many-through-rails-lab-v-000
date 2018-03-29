@@ -5,7 +5,6 @@ class AppointmentsController < ApplicationController
     @patient = @appointment.try(:patient)
     @doctor = @appointment.try(:doctor)
     @time = @appointment.try(:appointment_datetime)
-    binding.pry
   end
 
 
