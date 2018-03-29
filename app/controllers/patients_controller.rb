@@ -9,4 +9,7 @@ class PatientsController < ApplicationController
   end
 
 
+  def abstract_set
+    name = self.class.to_s.split("Controller")[0].chop
+  end
 end
